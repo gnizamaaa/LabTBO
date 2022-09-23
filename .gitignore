@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Impedir vazamento de enunciado
+*.pdf
+
 # Object files
 *.o
 *.ko
