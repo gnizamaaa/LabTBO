@@ -1,0 +1,19 @@
+Exercicio 2
+
+1. Qual conclus ̃ao vocˆe pode obter pelo desvio padr ̃ao?
+    Considerando a variação obtida de  1.56702123647, concluo que há uma variação menor 
+    que a que havia esperado do experimento.
+
+2. Qual  ́e a altura m ́axima e m ́ınima de uma BST em fun ̧c ̃ao de N ?
+    Para N 10⁶ Max:51 Min 47
+    N 10⁵ Max: 41 Min:38
+    N 10⁴ Max:32 Min:26
+    N 10³ Max:23 Min:20
+    N 10² Max:16 Min:10
+
+    Parece apresentar o seguinte comportamento, a cada ordem de grandeza aumentada
+    no número de elementos aleatórios adicionados a arvore, é acrescido 10 à altura
+
+3. Considerando os limites da quest ̃ao anterior, a m ́edia experimental da altura da BST  ́e
+boa ou ruim? Por quˆe?
+    Dada a simplicidade da implementação, considero o resultado obtido bom
