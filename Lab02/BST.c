@@ -1,4 +1,5 @@
 #include "BST.h"
+#include "Fila.h"
 
 struct bst
 {
@@ -79,6 +80,24 @@ void rec_postOrder(BST *t, void (*visit)(BST *))
     if (t->dir)
         rec_postOrder(t->dir, visit);
     visit(t);
+}
+
+void rec_levelOrder(BST *t, void (*visit)(BST *))
+{
+    Fila *filaexec = criaFila(9999);
+    BST *temp = t;
+    while (temp)
+    {
+        visit(temp);
+        if (temp->esq)
+            insereFila(temp->esq, filaexec);
+        if (temp->dir)
+            insereFila(temp->dir, filaexec);
+
+        temp = popFila(filaexec);
+    }
+
+    liberaFila(filaexec);
 }
 
 void LiberaArvBin(BST *liberada)

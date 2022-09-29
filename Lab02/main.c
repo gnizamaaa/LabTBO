@@ -28,12 +28,14 @@ int main()
     //     LiberaArvBin(arv);
     // }
 
-    arv = CriaArvBin(rand());
+    arv = CriaArvBin(rand() % 20);
+
     for (int i = 0; i < 10; i++)
     {
-        int r = rand(); // returns a pseudo-random integer between 0 and RAND_MAX
+        int r = (rand() % 20); // returns a pseudo-random integer between 0 and RAND_MAX
         InsereArvBin(r, arv);
     }
+
     printf("\n%i\n", getAlturaArvBin(arv));
 
     rec_preOrder(arv, ImprimeNo);
@@ -42,6 +44,7 @@ int main()
     printf("\n");
     rec_postOrder(arv, ImprimeNo);
     printf("\n");
+    rec_levelOrder(arv, ImprimeNo);
 
     LiberaArvBin(arv);
 

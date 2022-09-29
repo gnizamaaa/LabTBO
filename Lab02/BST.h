@@ -14,6 +14,7 @@ void ImprimeNo(BST *Arvore);
 void rec_preOrder(BST *t, void (*visit)(BST*));
 void rec_inOrder(BST *t, void (*visit)(BST*));
 void rec_postOrder(BST *t, void (*visit)(BST*));
+void rec_levelOrder(BST *t, void (*visit)(BST *));
 
 void LiberaArvBin(BST *liberada);
 
